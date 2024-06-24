@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "6502-s-compiler"
+version = "0.1.0"
+description = "Compiler for the 65c02"
+authors = ["Weston Gorczyca <weston.gorczyca@gmail.com>"]
+readme = "README.md"
+packages = [{include = "6502_"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

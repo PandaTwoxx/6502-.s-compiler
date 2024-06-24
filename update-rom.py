@@ -1,6 +1,9 @@
 import time
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
+directory = os.getenv("DIRECTORY")
+print(f"Pulling .s file from{directory}")
 def out_to_bin(source_file, destination_file):
   try:
     with open(source_file, "rb") as source, open(destination_file, "wb") as destination:
@@ -44,8 +47,6 @@ def build():
     start = time.time()
 
     file = ''
-
-    directory = '/Users/westongorczyca/Desktop/Code/6502-scripts'
         
     for filename in os.listdir(directory):
         print(filename)
