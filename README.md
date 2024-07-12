@@ -4,4 +4,4 @@ Searches for files with .s extension the converts them to a .bin executable file
 
 Only for the 6502 chip and the TL866 II Plus EEPROM Programmer
 
-Requires a .env file with contents: DIRECTORY=path/to/directory-containing/file
+Requires a .env file with contents: DIRECTORY=path/to/directory/containing/file
